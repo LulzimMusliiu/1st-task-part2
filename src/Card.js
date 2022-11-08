@@ -12,7 +12,7 @@ function Card(props) {
             <div className="profile">
                 <div className={`status ${props.status.toLowerCase()}`}>{props.status}</div>
                 <div className="profile-info">
-                    <img className="holding-img-profile" src={props.avatar} />
+                    <img className="holding-img-profile" src={props.avatar} alt=" " />
                     <h5>{props.firstName} {props.lastName}</h5>
                 </div>
             </div>
