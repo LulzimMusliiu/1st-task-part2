@@ -1,0 +1,135 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
+}
+
+:root {
+    --blue: #0870f8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html,
+body,
+.full-width {
+    height: 100%;
+}
+
+body, html {
+        margin: 0;
+        padding: 0;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+p,
+a,
+label {
+    margin: 0;
+}
+.cardholder {
+  margin: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.cardholderitem {
+    display: flex;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  max-width: 500px;
+  min-width: 250px;
+  padding: 25px;
+  flex-direction: column;
+}
+.profile {
+    padding: 10px 5px 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.status {
+    text-align: center;
+    background-color: green;
+    padding: 6px 30px;
+    border-radius: 5px;
+    color: white;
+  &.new {
+    background-color: #01C853;   
+  }
+  &.fix {
+    background-color: #2962FF;
+  }
+  &.improvement {
+    background-color:#C35BFF;
+  }
+}
+.datainfo h4 {
+    font-weight: 500;
+}
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-info {
+    font-size: 15px;
+    h5 {
+        font-weight: 600;
+    }
+}
+.holding-img-profile {
+    margin: 0px 0px 0px 15px;
+    width: 60px;
+    height: 60px;
+}
+.card-description {
+    margin-bottom: 20px;
+    p {
+        font-size:15px;
+        color: #D6D6D6;
+        padding: 15px 5px 5px 0px;
+    }
+}
+.button-container {
+    margin-top:auto;
+}
+.download-button {
+    min-width: 180px;
+    color: #86A6FF;
+    background-color: transparent;
+    background-image: none;
+    box-shadow: 0 0 0 1px  #86A6FF;
+    border: none;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    line-height: 25px;
+}
